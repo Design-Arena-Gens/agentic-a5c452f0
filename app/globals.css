@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
+
+@layer utilities {
+  .neumo {
+    background: linear-gradient(145deg, #ffffff, #f5f5f7);
+    box-shadow: 5px 5px 15px rgba(209, 209, 214, 0.5),
+                -5px -5px 15px rgba(255, 255, 255, 0.9);
+  }
+
+  .neumo-inset {
+    background: linear-gradient(145deg, #f5f5f7, #ffffff);
+    box-shadow: inset 5px 5px 10px rgba(209, 209, 214, 0.4),
+                inset -5px -5px 10px rgba(255, 255, 255, 0.8);
+  }
+
+  .neumo-flat {
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04),
+                0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d1d6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aeaeb2;
+}
